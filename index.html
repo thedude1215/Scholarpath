@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Preload the main hero image for faster loading -->
+    <link rel="preload" as="image" href="Adolescent-girls-during-co-design-session-for-the-digital-game-in-Surkhet-District-scaled.jpg" fetchpriority="high">
+
+    <title>ScholarPath Nepal (शिक्षा पथ) - Bridging the Opportunity Gap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Custom scrollbar for a more polished look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0d9488; /* emerald-600 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0f766e; /* emerald-700 */
+        }
+        /* Style for the scholarship cards */
+        .scholarship-card {
+            display: block; /* Shown by default *within the list* */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent text-white">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#home" class="flex items-center space-x-2">
+                <!-- LOCAL FILE -->
+                <img src="scholarpath-logo.png" alt="ScholarPath Nepal Logo" class="h-10 md:h-12">
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-4 6h16" />
+                </svg>
+            </button>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                <a href="#home" class="hover:text-emerald-300 transition-colors duration-200">Home</a>
+                <a href="#about" class="hover:text-emerald-300 transition-colors duration-200">About</a>
+                <a href="#impact" class="hover:text-emerald-300 transition-colors duration-200">Impact</a>
+                <a href="#programs" class="hover:text-emerald-300 transition-colors duration-200">Programs</a>
+                <a href="#platform" class="hover:text-emerald-300 transition-colors duration-200">Platform</a>
+                <a href="https://forms.gle/FHjAPvfTkXn6mDmC8" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 transition-colors duration-200">Partner</a>
+                <a href="#contact" class="hover:text-emerald-300 transition-colors duration-200">Contact</a>
+                <a href="#platform" class="bg-white text-emerald-700 px-5 py-2.5 rounded-full font-semibold hover:bg-emerald-50 transition-all duration-200 shadow-sm">
+                    Find Opportunities
+                </a>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-emerald-800 text-white">
+            <a href="#home" class="block px-4 py-3 text-center hover:bg-emerald-700">Home</a>
+            <a href="#about" class="block px-4 py-3 text-center hover:bg-emerald-700">About</a>
+            <a href="#impact" class="block px-4 py-3 text-center hover:bg-emerald-700">Impact</a>
+            <a href="#programs" class="block px-4 py-3 text-center hover:bg-emerald-700">Programs</a>
+            <a href="#platform" class="block px-4 py-3 text-center hover:bg-emerald-700">Platform</a>
+            <a href="https://forms.gle/FHjAPvfTkXn6mDmC8" target="_blank" rel="noopener noreferrer" class="block px-4 py-3 text-center hover:bg-emerald-700">Partner</a>
+            <a href="#contact" class="block px-4 py-3 text-center hover:bg-emerald-700">Contact</a>
+            <a href="#platform" class="block px-4 py-4 text-center bg-white text-emerald-700 font-semibold hover:bg-emerald-50">
+                Find Opportunities
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- LOCAL FILE -->
+    <header id="home" class="relative h-screen flex items-center justify-center text-white text-center" style="background: linear-gradient(rgba(6, 95, 70, 0.7), rgba(6, 95, 70, 0.7)), url('Adolescent-girls-during-co-design-session-for-the-digital-game-in-Surkhet-District-scaled.jpg') no-repeat center center; background-size: cover; background-color: #065f46;">
+        <div class="z-10 relative px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 drop-shadow-lg">Talent is Everywhere.<br>Opportunity is Not.</h1>
+            <p class="text-lg md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md">
+                ScholarPath is Nepal's mission-driven platform connecting students with the opportunities they deserve.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#platform" class="inline-block bg-emerald-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-transform duration-200 transform hover:scale-105 shadow-lg">
+                    Find Opportunities
+                </a>
+                <a href="https://forms.gle/FHjAPvfTkXn6mDmC8" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-emerald-800 px-8 py-3 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-transform duration-200 transform hover:scale-105 shadow-lg">
+                    Partner With Us
+                </a>
+            </div>
+        </div>
+        <!-- Scroll Down Arrow (Optional) -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
+            <svg class="w-8 h-8 text-white animate-bounce" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7-7-7 7" />
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <!-- About ScholarPath Section -->
+        <section id="about" class="py-20 bg-white px-4">
+            <div class="container mx-auto max-w-6xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <!-- Column 1: Text -->
+                    <div>
+                        <h2 class="text-4xl font-bold text-emerald-900 mb-6 text-center md:text-left">About ScholarPath</h2>
+                        <p class="text-lg text-gray-700 leading-relaxed text-justify">
+                            ScholarPath is a youth-led, mission-driven organization dedicated to dismantling the systemic barriers that prevent talented Nepali students from achieving their full potential. We operate on a core belief: talent is universal, but opportunity is not. In Nepal, a significant "information gap"—or information asymmetry—exists, where thousands of scholarships and opportunities remain inaccessible to the very students who need them most, simply because the information is scattered, hard to find, or not in their native language.
+                            <br><br>
+                            Our solution is a comprehensive ecosystem designed to bridge this gap. We combine a powerful tech platform with high-impact, on-the-ground outreach to create a sustainable pathway to opportunity for every student.
+                        </p>
+                    </div>
+                    <!-- Column 2: Image -->
+                    <div>
+                        <!-- NOTE: IMAGE MISSING - Add your file and change the src -->
+                        <img src="about-image.jpg" alt="ScholarPath Workshop" class="w-full rounded-xl shadow-lg aspect-[4/3] object-cover" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Metrics Section -->
+        <section id="impact" class="py-20 bg-emerald-900 text-white px-4">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <h3 class="text-4xl md:text-5xl font-bold mb-2 tabular-nums">
+                            <span data-target="1500" class="count-up">0</span>+
+                        </h3>
+                        <p class="text-lg text-emerald-300">Students Reached</p>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl md:text-5xl font-bold mb-2 tabular-nums">
+                            <span data-target="50" class="count-up">0</span>+
+                        </h3>
+                        <p class="text-lg text-emerald-300">Students Received Scholarship</p>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl md:text-5xl font-bold mb-2 tabular-nums">
+                            Rs. <span data-target="60" class="count-up">0</span>L+
+                        </h3>
+                        <p class="text-lg text-emerald-300">In Scholarship Value</p>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl md:text-5xl font-bold mb-2 tabular-nums">
+                            <span data-target="5" class="count-up">0</span>+
+                        </h3>
+                        <p class="text-lg text-emerald-300">Ambassador Clubs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Vision Section -->
+        <section id="vision" class="py-20 bg-white px-4">
+            <div class="container mx-auto max-w-5xl text-center">
+                <h2 class="text-4xl font-bold text-emerald-900 mb-6">Our Vision</h2>
+                <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto text-justify">
+                    Our vision is a future for Nepal where every student, regardless of their geography, wealth, or social standing, has a clear and accessible path to opportunity. We envision a nation where talent is identified and nurtured from every corner, where brilliant minds from rural villages are not lost to circumstance but are empowered to become the next generation of doctors, engineers, entrepreneurs, and leaders. We are building a system where information is a bridge, not a barrier, ensuring that every student's potential is seen, valued, and realized.
+                </p>
+            </div>
+        </section>
+
+        <!-- How It Works / Programs Section -->
+        <section id="programs" class="py-20 bg-emerald-50 px-4">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="text-4xl font-bold text-emerald-900 mb-12 text-center">Our Two-Part Solution</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <!-- Card 1: The Platform -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform transition-transform duration-300 hover:-translate-y-2">
+                        <div class="mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-emerald-900 mb-3">1. The Platform</h3>
+                        <p class="text-gray-600">A centralized, dynamic hub that uses technology to find and match students with scholarships, internships, and other opportunities in real-time.</p>
+                    </div>
+                    <!-- Card 2: The Workshops -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform transition-transform duration-300 hover:-translate-y-2">
+                        <div class="mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-emerald-900 mb-3">2. Opportunity Workshops</h3>
+                        <p class="text-gray-600">We "go-to-schools" to run hands-on workshops, onboarding students directly onto our platform and teaching them how to find and apply for opportunities.</p>
+                    </div>
+                    <!-- Card 3: The Clubs -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform transition-transform duration-300 hover:-translate-y-2">
+                        <div class="mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-emerald-900 mb-3">3. Ambassador Clubs</h3>
+                        <p class="text-gray-600">We establish student-led "ScholarPath Clubs" in partner schools to create a sustainable, on-the-ground network that ensures no student is left behind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Section -->
+        <section id="platform" class="py-20 bg-white px-4">
+            <div class="container mx-auto max-w-5xl">
+                <h2 class="text-4xl font-bold text-emerald-900 mb-4 text-center">The ScholarPath Platform</h2>
+                <p class="text-lg text-gray-700 text-center mb-10 max-w-3xl mx-auto">
+                    Use our filter to find opportunities from our curated database.
+                </p>
+
+                <!-- Search Form -->
+                <form id="scholarship-form" class="bg-emerald-50 p-8 rounded-xl shadow-lg border border-emerald-200 mb-16">
+                    <h3 class="text-2xl font-semibold text-emerald-900 mb-6 text-center">Find Your Match</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Grade Level -->
+                        <div>
+                            <label for="grade" class="block text-sm font-medium text-gray-700 mb-1">Your Grade / Level</label>
+                            <select id="grade" name="grade" class="w-full px-4 py-2.5 border border-gray-300 rounded-lg shadow-sm focus:ring-emerald-500 focus:border-emerald-500 text-lg">
+                                <option value="any">All Grades</option>
+                                <option value="class-8">Class 8</option>
+                                <option value="class-9">Class 9</option>
+                                <option value="see">Class 10 (SEE)</option>
+                                <option value="class-11">Class 11</option>
+                                <option value="class-12">Class 12</option>
+                                <option value="bachelors">Bachelor's</option>
+                                <option value="masters">Master's</option>
+                            </select>
+                        </div>
+                        <!-- District -->
+                        <div>
+                            <label for="district" class="block text-sm font-medium text-gray-700 mb-1">Your District</label>
+                            <input type="text" id="district" name="district" class="w-full px-4 py-2.5 border border-gray-300 rounded-lg shadow-sm focus:ring-emerald-500 focus:border-emerald-500 text-lg" placeholder="e.g., Dailekh, Kathmandu">
+                        </div>
+                        <!-- Income Level -->
+                        <div>
+                            <label for="income" class="block text-sm font-medium text-gray-700 mb-1">Income Level</label>
+                            <select id="income" name="income" class="w-full px-4 py-2.5 border border-gray-300 rounded-lg shadow-sm focus:ring-emerald-500 focus:border-emerald-500 text-lg">
+                                <option value="any">Any Income</option>
+                                <option value="low-income">Low-Income</option>
+                                <option value="middle-income">Middle-Income</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="text-center mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                        <button type="submit" class="inline-block bg-emerald-600 text-white px-10 py-3.5 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-transform duration-200 transform hover:scale-105 shadow-lg">
+                            Search Opportunities
+                        </button>
+                        <button type="button" id="clear-filter-btn" class="inline-block bg-white text-emerald-700 px-10 py-3.5 rounded-full text-lg font-semibold hover:bg-emerald-100 transition-all duration-200 shadow-sm border border-emerald-200">
+                            Clear Filter
+                        </button>
+                    </div>
+                </form>
+
+                
+                <!-- Curated Scholarship List Container - HIDDEN BY DEFAULT -->
+                <div id="scholarship-list-container" class="hidden">
+                    <div id="no-results" class="hidden text-center text-gray-600 bg-gray-100 p-8 rounded-lg">
+                        <h4 class="text-2xl font-semibold mb-2">No Matching Opportunities Found</h4>
+                        <p class="text-lg">Please try a broader filter or click "Clear Filter" to see all scholarships.</p>
+                    </div>
+
+                    <div id="scholarship-list" class="space-y-6">
+                        
+                        <!-- Scholarship 1 -->
+                        <div class="scholarship-card bg-emerald-50 p-6 rounded-lg shadow-md border border-emerald-200"
+                            data-grade="see"
+                            data-income="low-income middle-income any"
+                            data-district="all">
+                            <h4 class="text-xl font-semibold text-emerald-800 mb-2">SEE Provincial Topper Scholarships</h4>
+                            <p class="text-gray-700 mb-4">
+                                Many provincial governments (e.g., Bagmati, Gandaki) offer scholarships for students who top the SEE exams from government schools to pursue their +2 education.
+                            </p>
+                            <a href="https://moe.gov.np/" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-medium hover:underline">
+                                Check Provincial MOE Sites &rarr;
+                            </a>
+                        </div>
+                        
+                        <!-- Scholarship 2 -->
+                        <div class="scholarship-card bg-emerald-50 p-6 rounded-lg shadow-md border border-emerald-200"
+                            data-grade="bachelors"
+                            data-income="low-income middle-income any"
+                            data-district="all kathmandu">
+                            <h4 class="text-xl font-semibold text-emerald-800 mb-2">Ambition College Scholarships (BBA, BCA)</h4>
+                            <p class="text-gray-700 mb-4">
+                                Ambition College in Kathmandu offers a range of scholarships for its BBA and BCA programs, including merit-based and need-based financial aid for deserving students.
+                            </p>
+                            <a href="https://ambitioncollege.edu.np/scholarships" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-medium hover:underline">
+                                View Details at ambitioncollege.edu.np &rarr;
+                            </a>
+                        </div>
+
+                        <!-- Scholarship 3 -->
+                        <div class="scholarship-card bg-emerald-50 p-6 rounded-lg shadow-md border border-emerald-200"
+                            data-grade="class-11 class-12"
+                            data-income="low-income middle-income any"
+                            data-district="all">
+                            <h4 class="text-xl font-semibold text-emerald-800 mb-2">HSEB/NEB Scholarships for +2</h4>
+                            <p class="text-gray-700 mb-4">
+                                The National Examinations Board (NEB) provides scholarships for Class 11 and 12 in Science, Management, and other streams, often based on SEE scores and quotas.
+                            </p>
+                            <a href="https://www.neb.gov.np/" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-medium hover:underline">
+                                View Details at neb.gov.np &rarr;
+                            </a>
+                        </div>
+                        
+                        <!-- Scholarship 4 -->
+                        <div class="scholarship-card bg-emerald-50 p-6 rounded-lg shadow-md border border-emerald-200"
+                            data-grade="see class-11 class-12 bachelors masters"
+                            data-income="low-income"
+                            data-district="all">
+                            <h4 class="text-xl font-semibold text-emerald-800 mb-2">Dalit & Disadvantaged Student Scholarships</h4>
+                            <p class="text-gray-700 mb-4">
+                                Specific quotas and scholarships are reserved by the Ministry of Education for students from Dalit, Janajati, Madhesi, and other disadvantaged communities.
+                            </p>
+                            <a href="https://moest.gov.np/scholarships" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-medium hover:underline">
+                                View Details at moest.gov.np &rarr;
+                            </a>
+                        </div>
+                        
+                        <!-- Scholarship 5 -->
+                        <div class="scholarship-card bg-emerald-50 p-6 rounded-lg shadow-md border border-emerald-200"
+                            data-grade="bachelors"
+                            data-income="low-income"
+                            data-district="all">
+                            <h4 class="text-xl font-semibold text-emerald-800 mb-2">Himalayan Bank Foundation Scholarship</h4>
+                            <p class="text-gray-700 mb-4">
+                                The Himalayan Bank Foundation (HBF) partners with Kathmandu University to provide scholarships for underprivileged students to pursue a BBA degree at KU.
+                            </p>
+                            <a href="https://ku.edu.np/scholarship-hbf" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-medium hover:underline">
+                                View Details at ku.edu.np &rarr;
+                            </a>
+                        </div>
+                        
+                        <!-- Scholarship 6 -->
+                        <div class="scholarship-card bg-emerald-50 p-6 rounded-lg shadow-md border border-emerald-200"
+                            data-grade="bachelors"
+                            data-income="low-income"
+                            data-district="achham bajura">
+                            <h4 class="text-xl font-semibold text-emerald-800 mb-2">Budhi Ganga Hydropower Scholarship (Achham/Bajura)</h4>
+                            <p class="text-gray-700 mb-4">
+                                This scholarship is specifically for students from the project-affected areas of Achham and Bajura districts to pursue technical fields like engineering or medicine.
+                            </p>
+                            <a href="#" class="text-emerald-600 font-medium hover:underline">
+                                Check Local Government Bulletins &rarr;
+                            </a>
+                        </div>
+                        
+                        <!-- Scholarship 7 -->
+                        <div class="scholarship-card bg-emerald-50 p-6 rounded-lg shadow-md border border-emerald-200"
+                            data-grade="bachelors"
+                            data-income="any"
+                            data-district="all">
+                            <h4 class="text-xl font-semibold text-emerald-800 mb-2">Ncell Professional Mela Scholarship</h4>
+                            <p class="text-gray-700 mb-4">
+                                Ncell often provides scholarships for engineering and IT students at Tribhuvan University's Pulchowk Campus, based on academic merit.
+                            </p>
+                            <a href="https://www.ncell.axiata.com/" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-medium hover:underline">
+                                View Details at ncell.axiata.com &rarr;
+                            </a>
+                        </div>
+                        
+                        <!-- Scholarship 8 -->
+                        <div class="scholarship-card bg-emerald-50 p-6 rounded-lg shadow-md border border-emerald-200"
+                            data-grade="class-11 class-12"
+                            data-income="low-income"
+                            data-district="jajarkot">
+                            <h4 class="text-xl font-semibold text-emerald-800 mb-2">Karmath Scholarship (Jajarkot)</h4>
+                            <p class="text-gray-700 mb-4">
+                                A local scholarship for meritorious but financially weak students from Jajarkot district to pursue their higher secondary education (+2) in science.
+                            </p>
+                            <a href="#" class="text-emerald-600 font-medium hover:underline">
+                                Contact Jajarkot District Education Office &rarr;
+                            </a>
+                        </div>
+
+                        <!-- Scholarship Card 9 -->
+                        <div class="scholarship-card bg-emerald-50 p-6 rounded-lg shadow-md border border-emerald-200"
+                            data-grade="see class-12 bachelors masters any"
+                            data-income="low-income middle-income any"
+                            data-district="all">
+                            <h4 class="text-xl font-semibold text-emerald-800 mb-2">Nepal Government (Ministry of Education) Scholarships</h4>
+                            <p class="text-gray-700 mb-4">
+                                The Government of Nepal offers a wide range of scholarships for SEE, +2, Bachelor's, and Master's students based on merit and specific quotas (e.g., Dalit, Janajati, remote areas). These are some of the most valuable opportunities available.
+                            </p>
+                            <a href="https://moest.gov.np/scholarships" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-medium hover:underline">
+                                View Details at moest.gov.np &rarr;
+                            </a>
+                        </div>
+                        
+                        <!-- Scholarship Card 10 -->
+                        <div class="scholarship-card bg-emerald-50 p-6 rounded-lg shadow-md border border-emerald-200"
+                            data-grade="see class-11 any"
+                            data-income="low-income any"
+                            data-district="all">
+                            <h4 class="text-xl font-semibold text-emerald-800 mb-2">UWC (United World Colleges) Nepal Scholarship</h4>
+                            <p class="text-gray-700 mb-4">
+                                A highly prestigious full scholarship for students to complete their two-year high school (IB Diploma) at one of 18 UWC schools worldwide. Applications typically open for students aged 16-18 (Class 10-11).
+                            </p>
+                            <a href="https://www.np.uwc.org/" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-medium hover:underline">
+                                View Details at np.uwc.org &rarr;
+                            </a>
+                        </div>
+
+                        <!-- Scholarship Card 11 -->
+                        <div class="scholarship-card bg-emerald-50 p-6 rounded-lg shadow-md border border-emerald-200"
+                            data-grade="bachelors any"
+                            data-income="any"
+                            data-district="all">
+                            <h4 class="text-xl font-semibold text-emerald-800 mb-2">Indian Embassy Scholarships (COMPEX, etc.)</h4>
+                            <p class="text-gray-700 mb-4">
+                                The Embassy of India in Kathmandu offers several scholarship schemes for Nepali students to pursue undergraduate courses in India, including Engineering (BE), Pharmacy (B.Pharma), and more.
+                            </p>
+                            <a href="https://www.indembkathmandu.gov.in/page/education-scholarships/" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-medium hover:underline">
+                                View Details at indembkathmandu.gov.in &rarr;
+                            </a>
+                        </div>
+                        
+                        <!-- Scholarship Card 12 -->
+                        <div class="scholarship-card bg-emerald-50 p-6 rounded-lg shadow-md border border-emerald-200"
+                            data-grade="bachelors masters any"
+                            data-income="any"
+                            data-district="all">
+                            <h4 class="text-xl font-semibold text-emerald-800 mb-2">Chinese Government Scholarships</h4>
+                            <p class="text-gray-700 mb-4">
+                                Offered annually for Nepali students to pursue Bachelor's, Master's, or PhD degrees in various Chinese universities. These often cover tuition, accommodation, and a living stipend.
+                            </p>
+                            <a href="http://np.china-embassy.gov.cn/eng/lsfw/lxyw/" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-medium hover:underline">
+                                View Details at china-embassy.gov.cn &rarr;
+                            </a>
+                        </div>
+
+                        <!-- Scholarship Card 13 -->
+                        <div class="scholarship-card bg-emerald-50 p-6 rounded-lg shadow-md border border-emerald-200"
+                            data-grade="bachelors any"
+                            data-income="low-income any"
+                            data-district="all kathmandu">
+                            <h4 class="text-xl font-semibold text-emerald-800 mb-2">Kathmandu University (KU) Need-Based Scholarships</h4>
+                            <p class="text-gray-700 mb-4">
+                                KU provides financial assistance to meritorious but financially weak students for various undergraduate programs. The application process is internal after admission.
+                            </p>
+                            <a href="https://ku.edu.np/scholarship" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-medium hover:underline">
+                                View Details at ku.edu.np &rarr;
+                            </a>
+                        </div>
+                        
+                        <!-- Scholarship Card 14 -->
+                        <div class="scholarship-card bg-emerald-50 p-6 rounded-lg shadow-md border border-emerald-200"
+                            data-grade="bachelors any"
+                            data-income="low-income any"
+                            data-district="all pokhara">
+                            <h4 class="text-xl font-semibold text-emerald-800 mb-2">Tribhuvan University (TU) Need-Based Scholarships</h4>
+                            <p class="text-gray-700 mb-4">
+                                Tribhuvan University offers various scholarships and financial aid programs for students across its many constituent and affiliated campuses. These are often managed by the specific campus or institute (e.g., Institute of Engineering).
+                            </p>
+                            <a href="https://www.tuiost.edu.np/" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-medium hover:underline">
+                                View Details (e.g., IOE) &rarr;
+                            </a>
+                        </div>
+
+                        <!-- Scholarship Card 15 -->
+                        <div class="scholarship-card bg-emerald-50 p-6 rounded-lg shadow-md border border-emerald-200"
+                            data-grade="see class-11 class-12 bachelors masters any"
+                            data-income="low-income middle-income any"
+                            data-district="all">
+                            <h4 class="text-xl font-semibold text-emerald-800 mb-2">Private Bank & Corporate Scholarships (Nabil, Ncell)</h4>
+                            <p class="text-gray-700 mb-4">
+                                Many private companies (like Ncell) and banks (like Nabil Bank) offer annual scholarships for students, often as part of their Corporate Social Responsibility (CSR) programs for various levels.
+                            </p>
+                            <a href="#" class="text-emerald-600 font-medium hover:underline">
+                                Check Local Bank & Corporate Websites &rarr;
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section id="testimonial" class="py-20 bg-emerald-50 px-4">
+            <div class="container mx-auto max-w-5xl">
+                <h2 class="text-4xl font-bold text-emerald-900 mb-12 text-center">What Our Students Say</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <!-- Testimonial 1: Bigyan Adhikari -->
+                    <div class="bg-white rounded-xl shadow-xl overflow-hidden flex flex-col">
+                        <!-- LOCAL FILE -->
+                        <img class="h-56 w-full object-cover" src="bigyan.-adhikari.jpg" alt="Bigyan Adhikari" loading="lazy">
+                        <div class="p-8 flex flex-col justify-center h-full">
+                            <blockquote class="text-lg text-gray-700 leading-relaxed">
+                                "ScholarPath was a game-changer for me. I first learned about them at an <strong>opportunity workshop at my school</strong>. I knew I wanted to study A-Levels, but had no idea how to find scholarships. Using their <strong>platform</strong>, I discovered the RBS Scholarship, and their team guided me through the entire application process. Today, I'm studying at one of Nepal's top A-Level schools on a full scholarship, an opportunity I thought was impossible."
+                            </blockquote>
+                            <div class="mt-6">
+                                <p class="text-xl font-bold text-emerald-900">Bigyan Adhikari</p>
+                                <p class="text-md text-emerald-800">RBS Scholarship Recipient</p>
+                                <a href="mailto:bigyanadhikari2006@gmail.com" class="mt-4 inline-flex items-center text-emerald-600 font-medium hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                      <path d="M2.003 5.884L10 10.417l7.997-4.533A2 2 0 0018 4H2a2 2 0 00-1.997 1.884z" />
+                                      <path d="M18 8.118l-8 4.533L2 8.118V16a2 2 0 002 2h12a2 2 0 002 2V8.118z" />
+                                    </svg>
+                                    Contact Bigyan
+                                </a>
+                                <p class="mt-2 text-sm text-gray-600">bigyanadhikari2006@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2: Prajwal Sah -->
+                    <div class="bg-white rounded-xl shadow-xl overflow-hidden flex flex-col">
+                        <!-- LOCAL FILE -->
+                        <img class="h-56 w-full object-cover" src="prajwal-sah.jpg" alt="Prajwal Sah" loading="lazy">
+                        <div class="p-8 flex flex-col justify-center h-full">
+                            <blockquote class="text-lg text-gray-700 leading-relaxed">
+                                "I was lost trying to find the KMC scholarship. The process was unclear, and the deadlines were hard to find. ScholarPath's <strong>platform</strong> had the correct links, and their <strong>school info session</strong> gave me the confidence to apply. Their team guided me, and securing this scholarship to study at St. Xavier's College was a dream come true. It wouldn't have happened without their combined support."
+                            </blockquote>
+                            <div class="mt-6">
+                                <p class="text-xl font-bold text-emerald-900">Prajwal Sah</p>
+                                <p class="text-md text-emerald-800">KMC Scholarship Recipient</p>
+                                <a href="mailto:bizylsah@gmail.com" class="mt-4 inline-flex items-center text-emerald-600 font-medium hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                      <path d="M2.003 5.884L10 10.417l7.997-4.533A2 2 0 0018 4H2a2 2 0 00-1.997 1.884z" />
+                                      <path d="M18 8.118l-8 4.533L2 8.118V16a2 2 0 002 2h12a2 2 0 002 2V8.118z" />
+                                    </svg>
+                                    Contact Prajwal
+                                </a>
+                                <p class="mt-2 text-sm text-gray-600">bizylsah@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Meet Our Team Section -->
+        <section id="team" class="bg-white py-20 px-4"> <!-- Changed background to white -->
+            <div class="container mx-auto max-w-5xl text-center">
+                <h2 class="text-4xl font-bold text-emerald-900 mb-12">Meet Our Team</h2>
+                
+                <!-- 2x2 Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 justify-items-center">
+                    
+                    <!-- Founder -->
+                    <div class="flex flex-col items-center max-w-xs">
+                        <!-- LOCAL FILE -->
+                        <img src="Arnav-Kumar.JPG" alt="Arnav Kumar" 
+                             class="w-40 h-40 rounded-full object-cover border-4 border-emerald-100 shadow-lg"
+                             style="object-position: center 20%;" loading="lazy">
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-6 mb-1">Arnav Kumar</h3>
+                        <p class="text-lg font-medium text-emerald-800">Founder & CEO</p>
+                        <p class="text-gray-600 mt-2 italic">
+                            &ldquo;We believe that a student's future shouldn't be defined by their background, but by their potential.&rdquo;
+                        </p>
+                    </div>
+
+                    <!-- Managing Director -->
+                    <div class="flex flex-col items-center max-w-xs">
+                        <!-- LOCAL FILE -->
+                        <img src="dhariya-gautam.jpg" alt="Dhairya Gautam" 
+                             class="w-40 h-40 rounded-full object-cover border-4 border-emerald-100 shadow-lg" loading="lazy">
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-6 mb-1">Dhairya Gautam</h3>
+                        <p class="text-lg font-medium text-emerald-800">Managing Director</p>
+                        <p class="text-gray-600 mt-2 italic">
+                            &ldquo;Our on-the-ground network ensures that opportunity reaches every corner of Nepal.&rdquo;
+                        </p>
+                    </div>
+
+                    <!-- Outreach Manager -->
+                    <div class="flex flex-col items-center max-w-xs">
+                        <!-- LOCAL FILE -->
+                        <img src="abhimanyu-khatiwada.jpg" alt="Abhimanyu Khatiwada" 
+                             class="w-40 h-40 rounded-full object-cover border-4 border-emerald-100 shadow-lg" loading="lazy">
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-6 mb-1">Abhimanyu Khatiwada</h3>
+                        <p class="text-lg font-medium text-emerald-800">Outreach Manager</p>
+                    </div>
+
+                    <!-- Recruit Member -->
+                    <div class="flex flex-col items-center max-w-xs">
+                        <!-- LOCAL FILE -->
+                        <img src="bigyan.-adhikari.jpg" alt="Bigyan Adhikari" 
+                             class="w-40 h-40 rounded-full object-cover border-4 border-emerald-100 shadow-lg" loading="lazy">
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-6 mb-1">Bigyan Adhikari</h3>
+                        <p class="text-lg font-medium text-emerald-800">Recruit Member</p>
+                    </div>
+                </div>
+
+                <!-- New row for 5th member -->
+                <div class="mt-12 flex justify-center">
+                    <div class="flex flex-col items-center max-w-xs">
+                        <!-- LOCAL FILE -->
+                        <img src="aastika-mahaseth.jpg" alt="Aastika Mahaseth" 
+                             class="w-40 h-40 rounded-full object-cover border-4 border-emerald-100 shadow-lg" loading="lazy">
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-6 mb-1">Aastika Mahaseth</h3>
+                        <p class="text-lg font-medium text-emerald-800">Data Coordinator</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section id="partners" class="py-16 bg-emerald-50"> <!-- Changed background to light emerald -->
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-emerald-900 mb-8 text-center">Our Partners & Supporters</h2>
+                <p class="text-lg text-gray-700 text-center mb-10 max-w-2xl mx-auto">
+                    We are proud to collaborate with schools, NGOs, and local governments who believe in our mission.
+                </p>
+                <!-- Partner Logo Grid -->
+                <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 opacity-70"> <!-- Adjusted opacity -->
+                    <!-- LOCAL FILE -->
+                    <img src="Ambition_Guru_Logo.png" alt="Ambition Guru Logo" class="h-12 grayscale" title="Ambition Guru" loading="lazy">
+                    <!-- LOCAL FILE -->
+                    <img src="local-ngo-logo.png" alt="Local NGO Partner Logo" class="h-12 grayscale" title="Chay Ya Nepal" loading="lazy">
+                    <!-- LOCAL FILE - SWAPPED as requested -->
+                    <img src="partnerschool-3.jpeg" alt="Partner School 2 Logo" class="h-12 grayscale" title="Vedic School" loading="lazy">
+                    <!-- LOCAL FILE -->
+                    <img src="Aksharaa School Logo-B9CXu4NN.png" alt="Aksharaa School Logo" class="h-12 grayscale" title="Aksharaa School" loading="lazy">
+                    <!-- LOCAL FILE - SWAPPED as requested -->
+                    <img src="partnerschool-2-logo.jpg" alt="Partner School 3 Logo" class="h-12 grayscale" title="Noble School" loading="lazy">
+                </div>
+                <div class="text-center mt-12">
+                     <a href="https://forms.gle/FHjAPvfTkXn6mDmC8" target="_blank" rel="noopener noreferrer" class="inline-block bg-emerald-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-transform duration-200 transform hover:scale-105 shadow-lg"> <!-- Changed button style to match hero -->
+                        Become a Partner
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" class="bg-emerald-900 text-emerald-200 py-16 px-4">
+            <div class="container mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Column 1: About & Logo -->
+                <div>
+                    <!-- LOCAL FILE -->
+                    <img src="scholarpath-logo.png" alt="ScholarPath Nepal Logo" class="h-14 mb-4">
+                    <p class="text-emerald-300 leading-relaxed">
+                        Bridging Nepal's opportunity gap by connecting students with the scholarships, opportunities, and guidance they need to build a better future.
+                    </p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-white hover:text-emerald-300"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.773-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
+                        <a href="#" class="text-white hover:text-emerald-300"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg></a>
+                        <a href="#" class="text-white hover:text-emerald-300"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.225 11.324a.802.802 0 01-.762.228 5.75 5.75 0 00-3.38.106 5.034 5.034 0 00-1.895 1.221.794.794 0 01-1.076.01 4.96 4.96 0 00-2.348-.75c-.888 0-1.722.18-2.484.505a.8.8 0 01-.938-.175.79.79 0 01-.18-.934c.482-.9 1.09-1.72 1.804-2.43a6.56 6.56 0 013.295-1.928 6.645 6.645 0 013.886-.129.803.803 0 01.761.228.79.79 0 01.229.761 1.04 1.04 0 00-.002.046zm-4.223 4.295a.79.79 0 01.812-.023c.31.18.63.345.96.49a.794.794 0 01.603.749.8.8 0 01-.702.843 6.61 6.61 0 01-3.618 0 .8.8 0 01-.702-.843.794.794 0 01.603-.749c.33-.145.65-.31.96-.49a.79.79 0 01.812.023zM15 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM9 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" clip-rule="evenodd" /></svg></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-white">About Us</a></li>
+                        <li><a href="#impact" class="hover:text-white">Our Impact</a></li>
+                        <li><a href="#programs" class="hover:text-white">Our Programs</a></li>
+                        <li><a href="#platform" class="hover:text-white">Scholarship Platform</a></li>
+                        <li><a href="https://forms.gle/FHjAPvfTkXn6mDmC8" target="_blank" rel="noopener noreferrer" class="hover:text-white">Partner With Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact -->
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-4">Contact Us</h4>
+                    <p class="mb-2">Have a question or want to collaborate?</p>
+                    <p class="mb-4">
+                        <a href="mailto:info@scholarpath.org" class="text-white font-medium hover:underline">info@scholarpath.org</a>
+                    </p>
+                    <p class="text-sm">Kathmandu, Nepal</p>
+                </div>
+            </div>
+            <div class="border-t border-emerald-700 mt-12 pt-8 text-center text-emerald-300">
+                <p>&copy; <span id="current-year"></span> ScholarPath Nepal. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // === Sticky Navigation Bar ===
+            const navbar = document.getElementById('navbar');
+            const onScroll = () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('bg-emerald-900', 'shadow-lg');
+                    navbar.classList.remove('bg-transparent', 'text-white');
+                    // Get all links in the navbar
+                    const links = navbar.querySelectorAll('a:not(.bg-white)'); // Exclude the button
+                    links.forEach(link => {
+                        link.classList.add('text-white');
+                        link.classList.remove('text-emerald-300'); // Ensure hover class is removed
+                    });
+                } else {
+                    navbar.classList.remove('bg-emerald-900', 'shadow-lg');
+                    navbar.classList.add('bg-transparent', 'text-white');
+                    const links = navbar.querySelectorAll('a:not(.bg-white)');
+                    links.forEach(link => {
+                        link.classList.remove('text-white');
+                    });
+                }
+            };
+            window.addEventListener('scroll', onScroll);
+            onScroll(); // Run on page load
+
+            // === Mobile Menu Toggle ===
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            // Close mobile menu when a link is clicked
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // === Smooth Scrolling for Anchor Links ===
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // === Set Current Year in Footer ===
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // === Animated Counter ===
+            const animateCounter = (element, target) => {
+                let start = 0;
+                const duration = 1500; // 1.5 seconds
+                const range = target - start;
+                let startTime = null;
+
+                const step = (timestamp) => {
+                    if (!startTime) startTime = timestamp;
+                    const progress = timestamp - startTime;
+                    let current = Math.min(start + (range * (progress / duration)), target);
+                    current = Math.ceil(current); // Count up
+                    element.textContent = current;
+                    
+                    if (progress < duration) {
+                        requestAnimationFrame(step);
+                    } else {
+                        element.textContent = target; // Ensure it ends exactly on target
+                    }
+                };
+                requestAnimationFrame(step);
+            };
+
+            const impactSection = document.getElementById('impact');
+            const counters = document.querySelectorAll('.count-up');
+            let hasAnimated = false;
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !hasAnimated) {
+                        hasAnimated = true;
+                        counters.forEach(counter => {
+                            const target = +counter.getAttribute('data-target');
+                            animateCounter(counter, target);
+                        });
+                        observer.unobserve(impactSection); // Stop observing after animation
+                    }
+                });
+            }, { threshold: 0.5 }); // Trigger when 50% of the section is visible
+
+            if (impactSection) {
+                observer.observe(impactSection);
+            }
+
+            // === Scholarship Filtering (Static) ===
+            const form = document.getElementById('scholarship-form');
+            const scholarshipListContainer = document.getElementById('scholarship-list-container');
+            const allScholarships = document.querySelectorAll('.scholarship-card');
+            const noResultsMessage = document.getElementById('no-results');
+            const clearFilterBtn = document.getElementById('clear-filter-btn');
+
+            if (form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    // SHOW THE LIST
+                    scholarshipListContainer.classList.remove('hidden');
+
+                    // Get form values
+                    const grade = document.getElementById('grade').value;
+                    const district = document.getElementById('district').value.trim().toLowerCase();
+                    const income = document.getElementById('income').value;
+
+                    let resultsFound = 0;
+                    noResultsMessage.classList.add('hidden'); // Hide at the start of a new search
+
+                    allScholarships.forEach(card => {
+                        const cardGrades = card.dataset.grade || "any";
+                        const cardDistricts = card.dataset.district || "all";
+                        const cardIncomes = card.dataset.income || "any";
+
+                        // Match Grade
+                        const gradeMatch = (grade === 'any') || cardGrades.includes(grade) || cardGrades.includes('any');
+                        
+                        // Match Income
+                        const incomeMatch = (income === 'any') || cardIncomes.includes(income) || cardIncomes.includes('any');
+
+                        // Match District
+                        // If district input is empty, it's a match.
+                        // Otherwise, check if card districts includes the input, or if card district is 'all'
+                        const districtMatch = (district === '') || cardDistricts.includes(district) || cardDistricts.includes('all');
+
+                        if (gradeMatch && incomeMatch && districtMatch) {
+                            card.style.display = 'block';
+                            resultsFound++;
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+
+                    if (resultsFound === 0) {
+                        noResultsMessage.classList.remove('hidden');
+                    }
+                });
+            }
+            
+            if (clearFilterBtn) {
+                clearFilterBtn.addEventListener('click', () => {
+                    // Reset form fields
+                    document.getElementById('grade').value = 'any';
+                    document.getElementById('district').value = '';
+                    document.getElementById('income').value = 'any';
+                    
+                    // HIDE THE LIST AGAIN
+                    scholarshipListContainer.classList.add('hidden');
+                    
+                    // Hide no-results message
+                    noResultsMessage.classList.add('hidden');
+                });
+            }
+
+        });
+    </script>
+
+</body>
+</html>
