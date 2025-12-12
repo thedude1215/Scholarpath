@@ -549,67 +549,86 @@
         </section>
 
 
-        <!-- Meet Our Team Section -->
+       <!-- Meet Our Team Section -->
         <section id="team" class="bg-white py-20 px-4"> <!-- Changed background to white -->
-            <div class="container mx-auto max-w-5xl text-center">
+            <div class="container mx-auto max-w-6xl text-center">
                 <h2 class="text-4xl font-bold text-emerald-900 mb-12">Meet Our Team</h2>
                 
-                <!-- 2x2 Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 justify-items-center">
+                <!-- Layout: 1 Top (Founder), 2 Middle (Pres, MD), 3 Bottom (Outreach, Recruit, Data) -->
+                <div class="flex flex-col gap-12 items-center">
                     
-                    <!-- Founder -->
-                    <div class="flex flex-col items-center max-w-xs">
-                        <!-- LOCAL FILE -->
-                        <img src="Arnav-Kumar.JPG" alt="Arnav Kumar" 
-                             class="w-40 h-40 rounded-full object-cover border-4 border-emerald-100 shadow-lg"
-                             style="object-position: center 20%;" loading="lazy">
-                        <h3 class="text-2xl font-bold text-emerald-900 mt-6 mb-1">Arnav Kumar</h3>
-                        <p class="text-lg font-medium text-emerald-800">Founder & CEO</p>
-                        <p class="text-gray-600 mt-2 italic">
-                            &ldquo;We believe that a student's future shouldn't be defined by their background, but by their potential.&rdquo;
-                        </p>
+                    <!-- Row 1: Founder -->
+                    <div class="flex justify-center w-full">
+                        <div class="flex flex-col items-center max-w-xs">
+                            <!-- LOCAL FILE -->
+                            <img src="Arnav-Kumar.JPG" alt="Arnav Kumar" 
+                                class="w-40 h-40 rounded-full object-cover border-4 border-emerald-100 shadow-lg"
+                                style="object-position: center 20%;" loading="lazy">
+                            <h3 class="text-2xl font-bold text-emerald-900 mt-6 mb-1">Arnav Kumar</h3>
+                            <p class="text-lg font-medium text-emerald-800">Founder & CEO</p>
+                            <p class="text-gray-600 mt-2 italic">
+                                &ldquo;We believe that a student's future shouldn't be defined by their background, but by their potential.&rdquo;
+                            </p>
+                        </div>
                     </div>
 
-                    <!-- Managing Director -->
-                    <div class="flex flex-col items-center max-w-xs">
-                        <!-- LOCAL FILE -->
-                        <img src="dhariya-gautam.jpg" alt="Dhairya Gautam" 
-                             class="w-40 h-40 rounded-full object-cover border-4 border-emerald-100 shadow-lg" loading="lazy">
-                        <h3 class="text-2xl font-bold text-emerald-900 mt-6 mb-1">Dhairya Gautam</h3>
-                        <p class="text-lg font-medium text-emerald-800">Managing Director</p>
-                        <p class="text-gray-600 mt-2 italic">
-                            &ldquo;Our on-the-ground network ensures that opportunity reaches every corner of Nepal.&rdquo;
-                        </p>
+                    <!-- Row 2: President & MD -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-4xl justify-items-center">
+                        <!-- President (Saksham) -->
+                        <div class="flex flex-col items-center max-w-xs">
+                            <!-- PLACEHOLDER IMAGE - Please upload saksham-giri.jpg -->
+                            <img src="saksham-giri.jpg" alt="Saksham Giri" 
+                                class="w-40 h-40 rounded-full object-cover border-4 border-emerald-100 shadow-lg" loading="lazy">
+                            <h3 class="text-2xl font-bold text-emerald-900 mt-6 mb-1">Saksham Giri</h3>
+                            <p class="text-lg font-medium text-emerald-800">President</p>
+                            <p class="text-gray-600 mt-2 italic">
+                                &ldquo;Empowering the next generation through education is the most powerful tool we have for change.&rdquo;
+                            </p>
+                        </div>
+
+                        <!-- Managing Director (Dhairya) -->
+                        <div class="flex flex-col items-center max-w-xs">
+                            <!-- LOCAL FILE -->
+                            <img src="dhariya-gautam.jpg" alt="Dhairya Gautam" 
+                                class="w-40 h-40 rounded-full object-cover border-4 border-emerald-100 shadow-lg" loading="lazy">
+                            <h3 class="text-2xl font-bold text-emerald-900 mt-6 mb-1">Dhairya Gautam</h3>
+                            <p class="text-lg font-medium text-emerald-800">Managing Director</p>
+                            <p class="text-gray-600 mt-2 italic">
+                                &ldquo;Our on-the-ground network ensures that opportunity reaches every corner of Nepal.&rdquo;
+                            </p>
+                        </div>
                     </div>
 
-                    <!-- Outreach Manager -->
-                    <div class="flex flex-col items-center max-w-xs">
-                        <!-- LOCAL FILE -->
-                        <img src="abhimanyu-khatiwada.jpg" alt="Abhimanyu Khatiwada" 
-                             class="w-40 h-40 rounded-full object-cover border-4 border-emerald-100 shadow-lg" loading="lazy">
-                        <h3 class="text-2xl font-bold text-emerald-900 mt-6 mb-1">Abhimanyu Khatiwada</h3>
-                        <p class="text-lg font-medium text-emerald-800">Outreach Manager</p>
+                    <!-- Row 3: Outreach, Recruit, Data -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl justify-items-center">
+                        <!-- Outreach Manager (Abhimanyu) -->
+                        <div class="flex flex-col items-center max-w-xs">
+                            <!-- LOCAL FILE - CORRECTED FILENAME -->
+                            <img src="abhimanyu-khatiwada.JPG" alt="Abhimanyu Khatiwada" 
+                                class="w-36 h-36 rounded-full object-cover border-4 border-emerald-100 shadow-lg" loading="lazy">
+                            <h3 class="text-xl font-bold text-emerald-900 mt-6 mb-1">Abhimanyu Khatiwada</h3>
+                            <p class="text-md font-medium text-emerald-800">Outreach Manager</p>
+                        </div>
+
+                        <!-- Recruit Member (Bigyan) -->
+                        <div class="flex flex-col items-center max-w-xs">
+                            <!-- LOCAL FILE -->
+                            <img src="bigyan.-adhikari.jpg" alt="Bigyan Adhikari" 
+                                class="w-36 h-36 rounded-full object-cover border-4 border-emerald-100 shadow-lg" loading="lazy">
+                            <h3 class="text-xl font-bold text-emerald-900 mt-6 mb-1">Bigyan Adhikari</h3>
+                            <p class="text-md font-medium text-emerald-800">Recruit Member</p>
+                        </div>
+
+                        <!-- Data Coordinator (Aastika) -->
+                        <div class="flex flex-col items-center max-w-xs">
+                            <!-- LOCAL FILE -->
+                            <img src="aastika-mahaseth.jpg" alt="Aastika Mahaseth" 
+                                class="w-36 h-36 rounded-full object-cover border-4 border-emerald-100 shadow-lg" loading="lazy">
+                            <h3 class="text-xl font-bold text-emerald-900 mt-6 mb-1">Aastika Mahaseth</h3>
+                            <p class="text-md font-medium text-emerald-800">Data Coordinator</p>
+                        </div>
                     </div>
 
-                    <!-- Recruit Member -->
-                    <div class="flex flex-col items-center max-w-xs">
-                        <!-- LOCAL FILE -->
-                        <img src="bigyan.-adhikari.jpg" alt="Bigyan Adhikari" 
-                             class="w-40 h-40 rounded-full object-cover border-4 border-emerald-100 shadow-lg" loading="lazy">
-                        <h3 class="text-2xl font-bold text-emerald-900 mt-6 mb-1">Bigyan Adhikari</h3>
-                        <p class="text-lg font-medium text-emerald-800">Director of Finance & Operations </p>
-                    </div>
-                </div>
-
-                <!-- New row for 5th member -->
-                <div class="mt-12 flex justify-center">
-                    <div class="flex flex-col items-center max-w-xs">
-                        <!-- LOCAL FILE -->
-                        <img src="aastika-mahaseth.jpg" alt="Aastika Mahaseth" 
-                             class="w-40 h-40 rounded-full object-cover border-4 border-emerald-100 shadow-lg" loading="lazy">
-                        <h3 class="text-2xl font-bold text-emerald-900 mt-6 mb-1">Aastika Mahaseth</h3>
-                        <p class="text-lg font-medium text-emerald-800">Data Coordinator</p>
-                    </div>
                 </div>
             </div>
         </section>
